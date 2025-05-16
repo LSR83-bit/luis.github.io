@@ -1,0 +1,185 @@
+:root {
+    --color-fondo: #897fe2; /* Color de fondo principal */
+    --color-rosa-pastel: #b7b6ff; /* Rosa pastel para elementos interactivos */
+    --color-rosa-darker: #b7b6ff; /* Rosa más oscuro para hover */
+    --color-azul-pastel: #c9f3fa; /* Azul pastel para las secciones */
+    --color-titulo: #b7b6ff; /* Color rosa pastel para los títulos */
+    --color-texto: #4a4a4a; /* Color de texto gris oscuro */
+    --color-texto-secundario: #555; /* Color de texto gris claro */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-rosa-pastel);
+    width: 100%;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--color-rosa-darker);
+}
+
+/* Contenido principal */
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Secciones de contenido */
+.section {
+    background-color: var(--color-azul-pastel);
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: none; /* Todas las secciones ocultas por defecto */
+}
+
+/* Mostrar la sección seleccionada */
+:target {
+    display: block;
+}
+
+h1 {
+    color: var(--color-titulo);
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--color-texto-secundario);
+    text-align: center;
+}
+
+/* Responsive - en dispositivos pequeños */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+img {
+    border-radius: 15px; /* Borde redondeado */
+    width: 200px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+    flex-wrap: wrap;
+}
+.color{
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px rgba(3, 153, 120, 0.89); /* Sombra color lila */
+    width: 250px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+}
+.color {
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Cuando el cursor pase por encima, la imagen se agranda */
+  .color:hover {
+    transform: scale(1.2); /* 1.2 hace que la imagen se agrande al 120% */
+  }
+.color2{
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px rgba(60, 48, 233, 0.89); /* Sombra color lila */
+    width: 250px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+}
+.color2 {
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Cuando el cursor pase por encima, la imagen se agranda */
+  .color2:hover {
+    transform: scale(1.2); /* 1.2 hace que la imagen se agrande al 120% */
+  }
+.color3{
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px 5px 5px 15px rgba(238, 159, 86, 0.6); /* Sombra color lila */
+    width: 250px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+}
+/* Inicialmente la imagen tiene su tamaño normal */
+.color3 {
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Cuando el cursor pase por encima, la imagen se agranda */
+  .color3:hover {
+    transform: scale(1.2); /* 1.2 hace que la imagen se agrande al 120% */
+  }
+  
+.color4{
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px 5px 5px 15px rgba(94, 219, 182, 0.6); /* Sombra color lila */
+    width: 250px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+}
+.color4 {
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Cuando el cursor pase por encima, la imagen se agranda */
+  .color4:hover {
+    transform: scale(1.2); /* 1.2 hace que la imagen se agrande al 120% */
+  }
+  .colores{
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px 5px 5px 15px rgba(94, 219, 182, 0.6); /* Sombra color lila */
+    width: 250px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+}
+.colores{
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Cuando el cursor pase por encima, la imagen se agranda */
+  .colores:hover {
+    transform: scale(1.2); /* 1.2 hace que la imagen se agrande al 120% */
+  }
+  .RGB{
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px 5px 5px 15px rgba(94, 219, 182, 0.6); /* Sombra color lila */
+    width: 250px; /* Puedes ajustar el tamaño de la imagen */
+    height: auto;
+}
+.RGB{
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Cuando el cursor pase por encima, la imagen se agranda */
+  .RGB:hover {
+    transform: scale(1.2); /* 1.2 hace que la imagen se agrande al 120% */
+  }
